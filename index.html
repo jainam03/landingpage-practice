@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="main">
+    <div id="main" data-scroll-container>
         <div id="left">
             <div id="lnav">
                 <i class="ri-arrow-left-line"></i>
                 <div id="lnavr">
                     <a href="">About</a>
                     <a href="">Work</a>
+                    <a href="#new-section">Contact</a>
                     <i class="ri-twitter-fill" ></i>
                 </div>
             </div>
@@ -33,6 +36,18 @@
             </div>
             <div id="rbottom"></div>
         </div>
+    </div>
+
+    <div id="new-section" data-scroll-section>
+        <p>Contact me, and let me know your thoughts! 🙂</p>
+
+        <form action="">
+            <input type="text" placeholder="Your name">
+            <input type="email" placeholder="Enter your email">
+            <textarea name="" id="" cols="23" rows="6" placeholder="Share your thoughts..."></textarea>
+        </form>
+
+        <button>Send</button>
     </div>
 </body>
 
