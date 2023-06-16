@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div id="main" data-scroll-container>
+<body data-aos="fade-up" >
+    <div id="main">
         <div id="left">
             <div id="lnav">
                 <i class="ri-arrow-left-line"></i>
@@ -31,14 +31,14 @@
         </div>
         <div id="right">
             <div id="rtop">
-                <div id="rtopleft"></div>
-                <div id="rtopright"></div>
+                <div id="rtopleft" data-aos="flip-left" ></div>
+                <div id="rtopright" data-aos="flip-right" ></div>
             </div>
-            <div id="rbottom"></div>
+            <div id="rbottom" data-aos="flip-down" ></div>
         </div>
     </div>
 
-    <div id="new-section" data-scroll-section>
+    <div id="new-section" data-aos="fade-up">
         <p>Contact me, and let me know your thoughts! 🙂</p>
 
         <form action="">
@@ -49,6 +49,10 @@
 
         <button>Send</button>
     </div>
+
+    <script type="text/javascript" >
+        AOS.init()  
+    </script>
 </body>
 
 </html>
