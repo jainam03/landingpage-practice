@@ -47,11 +47,16 @@
             <textarea name="" id="" cols="23" rows="6" placeholder="Share your thoughts..."></textarea>
         </form>
 
-        <button>Send</button>
+        <button id="send-btn">Send</button>
     </div>
 
     <script type="text/javascript" >
-        AOS.init()  
+        AOS.init() 
+        let sendBtn = document.getElementByID('send-btn')
+
+sendBtn.addEventListener('click', function() { 
+    alert('Thanks for sharing your thoughts') 
+})
     </script>
 </body>
 
